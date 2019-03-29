@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "586034956CCAEFAAAB82C3CB"
+               BuildableName = "ios.lesson1.task.simpleview.app"
+               BlueprintName = "ios.lesson1.task.simpleview"
+               ReferencedContainer = "container:ios.lesson1.task.simpleview.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "586034956CCAEFAAAB82C3CB"
+            BuildableName = "ios.lesson1.task.simpleview.app"
+            BlueprintName = "ios.lesson1.task.simpleview"
+            ReferencedContainer = "container:ios.lesson1.task.simpleview.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
