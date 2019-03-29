@@ -37,13 +37,20 @@
                                 <rect key="frame" x="312" y="474" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="aproveAggrement:" destination="BYZ-38-t0r" eventType="valueChanged" id="V90-kM-7av"/>
+                                    <action selector="aproveAggrement:" destination="BYZ-38-t0r" eventType="valueChanged" id="ts8-g7-hwh"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Согласны ли вы с условиями лицензии?" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nm2-jI-ZIE">
                                 <rect key="frame" x="16" y="469" width="277" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="А зря!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ani-1x-jO5">
+                                <rect key="frame" x="314" y="540" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -59,6 +66,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="comment" destination="ani-1x-jO5" id="uWq-n6-XZh"/>
+                        <outlet property="licenseAggrement" destination="awn-B1-yv5" id="33k-Mb-yZc"/>
                         <outlet property="slider" destination="pRO-W0-Aig" id="oaJ-Wd-i6f"/>
                         <outlet property="sliderValue" destination="M6Q-vf-IFU" id="Fi1-Aw-2tk"/>
                     </connections>

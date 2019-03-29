@@ -12,6 +12,8 @@
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *sliderValue;
+@property (strong, nonatomic) IBOutlet UILabel *comment;
 @property (strong, nonatomic) IBOutlet UISlider *slider;
+@property (strong, nonatomic) IBOutlet UISwitch *licenseAggrement;
 
 @end

@@ -15,21 +15,29 @@
 @implementation ViewController
 @synthesize sliderValue;
 @synthesize slider;
+@synthesize licenseAggrement;
+@synthesize comment;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setText:slider.value];
+    [self showComment:licenseAggrement.on];
 }
 
 - (IBAction)changeSliderValue:(UISlider *)sender {
     [self setText:sender.value];
 }
 
-- (IBAction)aproveAggrement:(id)sender {
+- (IBAction)aproveAggrement:(UISwitch *)sender {
+    [self showComment:sender.on];
 }
 
 - (void) setText:(float)value {
     [sliderValue setText:[NSString stringWithFormat:@"%.0f", value]];
+}
+
+- (void) showComment:(BOOL)isVisible {
+    comment.hidden = !isVisible;
 }
 
 @end
