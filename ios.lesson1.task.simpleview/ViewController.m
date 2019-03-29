@@ -10,24 +10,26 @@
 
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *sliderValue;
-
 @end
 
 @implementation ViewController
+@synthesize sliderValue;
+@synthesize slider;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self setText:slider.value];
 }
 
-- (IBAction)showAbout:(id)sender {
-}
-
-- (IBAction)changeValue:(id)sender {
+- (IBAction)changeSliderValue:(UISlider *)sender {
+    [self setText:sender.value];
 }
 
 - (IBAction)aproveAggrement:(id)sender {
+}
+
+- (void) setText:(float)value {
+    [sliderValue setText:[NSString stringWithFormat:@"%.0f", value]];
 }
 
 @end

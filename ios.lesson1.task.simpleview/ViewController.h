@@ -11,5 +11,7 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *sliderValue;
+@property (strong, nonatomic) IBOutlet UISlider *slider;
 
 @end
