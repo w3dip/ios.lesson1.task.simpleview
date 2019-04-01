@@ -13,15 +13,11 @@
 @end
 
 @implementation ViewController
-@synthesize sliderValue;
-@synthesize slider;
-@synthesize licenseAggrement;
-@synthesize comment;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setText:slider.value];
-    [self showComment:licenseAggrement.on];
+    [self setText:self.slider.value];
+    [self showComment:self.licenseAggrement.on];
 }
 
 - (IBAction)changeSliderValue:(UISlider *)sender {
@@ -33,11 +29,11 @@
 }
 
 - (void) setText:(float)value {
-    [sliderValue setText:[NSString stringWithFormat:@"%.0f", value]];
+    [self.sliderValue setText:[NSString stringWithFormat:@"%.0f", value]];
 }
 
 - (void) showComment:(BOOL)isVisible {
-    comment.hidden = !isVisible;
+    self.comment.hidden = !isVisible;
 }
 
 @end
