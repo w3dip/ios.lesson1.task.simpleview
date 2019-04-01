@@ -13,6 +13,12 @@
 		586038127E20EE9B256FCCDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5860367DF505628E354D1FE2 /* LaunchScreen.storyboard */; };
 		586038931B4984A7BCDC0181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58603B1C6F31AAFCCB025E41 /* Assets.xcassets */; };
 		58603A956FDAC4DA081FE620 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603C6C3CA19AD8426CB303 /* main.m */; };
+		841015D02252753F005172B3 /* IPStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 841015CF2252753F005172B3 /* IPStack.m */; };
+		841015D322527E74005172B3 /* IPQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 841015D222527E74005172B3 /* IPQueue.m */; };
+		841015D722528347005172B3 /* IPSomeClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 841015D622528347005172B3 /* IPSomeClassA.m */; };
+		841015DA22528359005172B3 /* IPSomeClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 841015D922528359005172B3 /* IPSomeClassB.m */; };
+		841015DD22528371005172B3 /* IPMultiInheritanceExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 841015DC22528371005172B3 /* IPMultiInheritanceExample.m */; };
+		841015E3225294A2005172B3 /* IPRetainCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 841015E2225294A2005172B3 /* IPRetainCycle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		58603B1C6F31AAFCCB025E41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58603B4CC15A4D54D1278EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		58603C6C3CA19AD8426CB303 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		841015CE2252753F005172B3 /* IPStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPStack.h; sourceTree = "<group>"; };
+		841015CF2252753F005172B3 /* IPStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPStack.m; sourceTree = "<group>"; };
+		841015D122527E74005172B3 /* IPQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPQueue.h; sourceTree = "<group>"; };
+		841015D222527E74005172B3 /* IPQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPQueue.m; sourceTree = "<group>"; };
+		841015D522528347005172B3 /* IPSomeClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPSomeClassA.h; sourceTree = "<group>"; };
+		841015D622528347005172B3 /* IPSomeClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPSomeClassA.m; sourceTree = "<group>"; };
+		841015D822528359005172B3 /* IPSomeClassB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPSomeClassB.h; sourceTree = "<group>"; };
+		841015D922528359005172B3 /* IPSomeClassB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPSomeClassB.m; sourceTree = "<group>"; };
+		841015DB22528371005172B3 /* IPMultiInheritanceExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPMultiInheritanceExample.h; sourceTree = "<group>"; };
+		841015DC22528371005172B3 /* IPMultiInheritanceExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPMultiInheritanceExample.m; sourceTree = "<group>"; };
+		841015E1225294A2005172B3 /* IPRetainCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPRetainCycle.h; sourceTree = "<group>"; };
+		841015E2225294A2005172B3 /* IPRetainCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPRetainCycle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +68,10 @@
 		58603808DB463833FFBB7FBC /* ios.lesson1.task.simpleview */ = {
 			isa = PBXGroup;
 			children = (
+				841015E022529487005172B3 /* retain_cycle */,
+				841015DF2252838D005172B3 /* queue */,
+				841015DE22528380005172B3 /* stack */,
+				841015D42252831C005172B3 /* inheritance */,
 				58603B4CC15A4D54D1278EB0 /* Info.plist */,
 				58603B1C6F31AAFCCB025E41 /* Assets.xcassets */,
 				5860367DF505628E354D1FE2 /* LaunchScreen.storyboard */,
@@ -69,6 +91,46 @@
 				5860347919343B5576FB1BE9 /* ios.lesson1.task.simpleview.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		841015D42252831C005172B3 /* inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				841015D522528347005172B3 /* IPSomeClassA.h */,
+				841015D622528347005172B3 /* IPSomeClassA.m */,
+				841015D822528359005172B3 /* IPSomeClassB.h */,
+				841015D922528359005172B3 /* IPSomeClassB.m */,
+				841015DB22528371005172B3 /* IPMultiInheritanceExample.h */,
+				841015DC22528371005172B3 /* IPMultiInheritanceExample.m */,
+			);
+			path = inheritance;
+			sourceTree = "<group>";
+		};
+		841015DE22528380005172B3 /* stack */ = {
+			isa = PBXGroup;
+			children = (
+				841015CE2252753F005172B3 /* IPStack.h */,
+				841015CF2252753F005172B3 /* IPStack.m */,
+			);
+			path = stack;
+			sourceTree = "<group>";
+		};
+		841015DF2252838D005172B3 /* queue */ = {
+			isa = PBXGroup;
+			children = (
+				841015D122527E74005172B3 /* IPQueue.h */,
+				841015D222527E74005172B3 /* IPQueue.m */,
+			);
+			path = queue;
+			sourceTree = "<group>";
+		};
+		841015E022529487005172B3 /* retain_cycle */ = {
+			isa = PBXGroup;
+			children = (
+				841015E1225294A2005172B3 /* IPRetainCycle.h */,
+				841015E2225294A2005172B3 /* IPRetainCycle.m */,
+			);
+			path = retain_cycle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841015E3225294A2005172B3 /* IPRetainCycle.m in Sources */,
+				841015DD22528371005172B3 /* IPMultiInheritanceExample.m in Sources */,
 				58603A956FDAC4DA081FE620 /* main.m in Sources */,
 				586035A7F111D5A76E3F0AC4 /* AppDelegate.m in Sources */,
 				586036C307E33EA024058FB5 /* ViewController.m in Sources */,
+				841015D722528347005172B3 /* IPSomeClassA.m in Sources */,
+				841015D322527E74005172B3 /* IPQueue.m in Sources */,
+				841015D02252753F005172B3 /* IPStack.m in Sources */,
+				841015DA22528359005172B3 /* IPSomeClassB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +385,7 @@
 				586031A6081F76378311BF5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
